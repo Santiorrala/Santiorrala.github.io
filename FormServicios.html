@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .text-center{
+        text-align: center;
+        }
+        #contenedorContenido{
+        color:#ffffff;
+        }
+
+        .formularios{
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        padding: 10px;
+        width: 95%;
+        margin: 0 auto;
+        }
+        .formularios div{
+        padding: 5px;
+        }
+
+        .mensajeError{
+        color:red;
+        font-size: 10px;
+        }
+
+        #pie{
+        font-family: 'Courier New', Courier, monospace;
+        }
+
+        button, input, select, textarea{
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin: 10px;
+        }
+        label {
+        margin-bottom: 20px;
+        }
+        .formularios{
+        display: table;
+        }
+        .fila{
+        display: table-row;
+        }
+        .col{
+        display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedorPrincipal">
+        <header class="">
+            <div class="logo">
+                 <img src="img/logoseguridad.png" alt="logocompañia" class="logo-img">
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link " >Inicio</a>
+                              </li>
+                            <li class="nav-item">
+                                <a href="Servicios.html" class="nav-link" >Servicios</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="nosotros.html" class="nav-link" >Quienes somos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="TrabajeConNosotros.html" class="nav-link" >Trabaje con nosotros</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="Contactenos.html" class="nav-link"  >Contactenos</a>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> 
+        <div id="contenedorContenido">
+            <h1 class="text-center">COTIZA CON NOSOTROS</h1>
+            <hr>
+            <h4>Llene el formulario y nos contactaremos con usted en las proximas horas para atender su petici&oacute;n.</h4>
+            <hr>
+            <div class="formularios">
+                <!-- onsubmit=return validar() PERMITE LLAMAR A LA FUNCION DE JAVASCRIPT QUE VALIDA EL FORMULARIO-->
+                <form id="formServicios">
+                    <div class="col">
+                        <div class="fila">
+                            <label>Nombres:</label>
+                            <input type="text" name="nombres y apellidos" id="NyA" class="formItem" placeholder=""/>
+                        </div>
+                        <div class="fila">
+                            <label>Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" class="formItem" />
+                        </div>
+                        <div class="fila">
+                            <label>Email:</label>
+                            <input type="email" name="correo" id="correo" class="formItem" />
+                        </div>
+                        <div class="fila">
+                            <textarea id="texto" rows="4" cols="50" class="formItem" placeholder="Mensaje (opcional)"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="fila">
+                            <label>Entidad:</label>
+                            <select name="entidad" id="entidad" class="formItem">
+                                <option value="0">Seleccione..</option>
+                                <option value="1">Empresa</option>
+                                <option value="2">Persona</option>
+                            </select>
+                        </div>
+                        <div class="fila">
+                            <label style="font-weight: bold;">Marque los servicios en los que esta interesado a suscribirse:</label>
+                            <table>
+                            <tr>
+                                <td>Vigilancia armada <input type="checkbox" name="suscripcion1" value="1" id="suscripcion1"
+                                class="sus"/></td>
+                                <td>Custodia terrestre <input type="checkbox" name="suscripcion2" value="2" id="suscripcion2"
+                                class="sus"/></td>
+                                <td>Seguridad marítima <input type="checkbox" name="suscripcion3" value="3" id="suscripcion3"
+                                class="sus"/></td>
+                            </tr>
+                            <tr>
+                                <td>Sistema de alarma <input type="checkbox" name="suscripcion4" value="4" id="suscripcion4"
+                                class="sus"/></td>
+                                <td>Sistema contra incendio <input type="checkbox" name="suscripcion5" value="5" id="suscripcion5"
+                                class="sus"/></td>
+                                <td>Sistema de circuito cerrado <input type="checkbox" name="suscripcion6" value="6" id="suscripcion6"
+                                class="sus"/></td>
+                            </tr>
+                            <tr>
+                                <td>Sistema contra robos <input type="checkbox" name="suscripcion7" value="7" id="suscripcion7"
+                                class="sus"/></td>
+                                <td>Rastreo vehicular <input type="checkbox" name="suscripcion8" value="8" id="suscripcion8"
+                                class="sus"/></td>
+                                <td>Rastreo personal <input type="checkbox" name="suscripcion9" value="9" id="suscripcion9"
+                                class="sus"/></td>
+                            </tr>
+                            </table>
+                            <br>
+                        </div>
+                        <div class="fila">
+                            <label>Desea suscribirse a nuestro boletin de noticias?:</label>
+                            <input class="gen" id="si" type="radio" name="subscripcion" value="F" /> Si
+                            <input class="gen" id="no" type="radio" name="subscripcion" value="M" /> No
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="reset" class="btn btn-primary" value="Cancelar">
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer class="container" id="pie">
+        <h4 style="color: white;">Nuestras Redes</h4><br><br>
+        <div class="row">
+                    <div class="copyright">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="img/FaceLogo.png" alt="fb" width="100" height="60"></a>
+                    </div>
+                    <div class="copyright" style="padding-bottom:2%;">
+                        <a href="https://www.instagram.com/ " target="_blank"><img src="img/insta.png" alt="insta" width="50" ></a>  
+                    </div>
+        </div>
+        <div class="derechos">
+            <div class="copyright">
+                <div class="copyright">
+                    Escrito por   <a href="mailto:aaron.alvarezl@ug.edu.ec">Aaron Alvarez</a> &copy; 2022
+                </div>
+                <div class="credits">
+                    Visistanos en:
+                    Abel Gilbert 3, Duran
+                    Ecuador                                
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script type="text/javascript" src="js/validaciones.js">
+    </script> -->
+    <script>
+        var form = document.getElementById("formServicios");
+        form.addEventListener('submit', validar);
+
+        let cont=0;
+        function validar(event) {
+            var valido = true;
+            var txtNombres = document.getElementById("NyA");
+            var txtTelefono = document.getElementById("telefono");
+            var txtemail = document.getElementById("correo");
+            var selectEstado = document.getElementById("entidad");
+            var checkboxsSuscripcion = document.getElementsByClassName("sus");
+            var radiosGenero = document.getElementsByName("subscripcion");
+            var letra = /^[a-z ,.'-]+$/i;
+            var correo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            var telefonoreg = /^[0-9]{10}$/g;
+
+            limpiarMensajes();
+
+            if (txtNombres.value === "") {
+                valido = false;
+                mensaje("Nombre es requerido", txtNombres);
+            } else if (!letra.test(txtNombres.value)) { 
+                valido = false;
+                mensaje("Nombre solo debe contener letras", txtNombres);
+            } else if (txtNombres.value.length > 20) {
+                valido = false;
+                mensaje("Nombre maximo 20 caracteres", txtNombres);
+            }
+            if (txtTelefono.value === "") {
+                valido = false;
+                mensaje("Telefono es requerido", txtTelefono);
+            } else if (!telefonoreg.test(txtTelefono.value)) {
+                valido = false;
+                mensaje("Telefono debe ser de 10 digitos", txtTelefono);
+            }
+
+            //validacion email
+            if (txtemail.value === "") {
+                valido = false;
+                mensaje("Email es requerido", txtemail);
+            } else if (!correo.test(txtemail.value)) {
+                valido = false;
+                mensaje("Email no es correcto", txtemail);
+            }
+            if (selectEstado.value === null || selectEstado.value === '0') {
+                valido = false;
+                mensaje("Debe seleccionar una entidad", selectEstado);
+            }
+            var sel = false;
+            for (let i = 0; i < radiosGenero.length; i++) {
+                if (radiosGenero[i].checked) {
+                    sel = true;
+                break;
+                }
+            }
+            if (!sel) {
+                valido = false;
+                mensaje("Debe responder si desea suscribirse al boletin de noticias", radiosGenero[0]);
+            }
+            sel = false; 
+            cont=0; 
+            for (let i = 0; i < checkboxsSuscripcion.length; i++) {
+                if (checkboxsSuscripcion[i].checked) {
+                    cont++;
+                    sel = true;
+                }
+            }
+            if (!sel) {
+                valido = false;
+                mensaje("Debe seleccionar al menos un servicio", checkboxsSuscripcion[8]);
+            }
+        
+        if(!valido){
+                event.preventDefault();
+            }
+        }
+
+        function mensaje(cadenaMensaje, elemento) {
+            elemento.focus();
+            var nodoPadre = elemento.parentNode;
+            var nodoMensaje = document.createElement("span");
+            nodoMensaje.textContent = cadenaMensaje;
+            nodoMensaje.style.fontSize = '12px';
+            nodoMensaje.setAttribute("class", "mensajeError");
+            nodoPadre.appendChild(nodoMensaje);
+
+        }
+
+        function limpiarMensajes() {
+            var mensajes = document.querySelectorAll(".mensajeError");
+            for (let i = 0; i < mensajes.length; i++) {
+                mensajes[i].remove();
+            }
+        }
+    </script>
+</body>
+
+</html>

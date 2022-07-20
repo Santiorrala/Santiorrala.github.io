@@ -1,0 +1,112 @@
+
+body{
+    
+   font-style: Times new roman;
+  width: 100% !important;
+  margin: 2px ;
+  background-color: black !important;
+}
+header{
+            
+  text-align: left;
+  line-height: 180px;
+  display: flex;
+  height: 130px;
+  background-color: white;
+  align-items: center;
+}
+.logo{
+  display: flex;
+}
+.logo img{
+  height: 130px;
+
+}
+a{
+  text-decoration: none;
+  color: black ;
+
+}
+nav a{
+  font-weight: 100;
+  padding-right: 3rem;
+}
+
+section{
+
+  color: white;
+   font-family: Arial;
+  text-align: justify; 
+}
+.sliderimg {
+  width: 100%;
+    height: auto;
+  margin:50px auto 0;
+  overflow: hidden;
+}
+
+.sliderimg ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  
+  animation: slide 10s infinite alternate ease-in-out;
+}
+
+.sliderimg li {
+  width: 100%;
+  list-style: none;
+}
+
+.sliderimg img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+.segbeneficio{
+ 
+  
+  border-style: solid;
+  border-color: black;
+
+}
+
+h1 {
+  border: red 3px groove;
+  border-width: 5px;
+  background-color: gray;
+}
+footer{
+  color: white;
+  text-align: center;
+}
+h3{
+  color: white;
+}
+.img2 {
+ padding: 10px;
+  margin: 10px;
+   border: 2px solid black;
+    float: right;
+     width: 250px; 
+}
+.derechos{
+            text-align: center;
+            height: 10px;
+            
+
+            }
+            
+

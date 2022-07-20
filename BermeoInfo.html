@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+        <meta name="description" content="ejemplo de HTML5">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript">
+        <title>Información</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        
+        <style>
+            h1, h2, h3, h4{
+                color: rgb(231, 1, 1);
+            } 
+
+            #corto{
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+
+            #mega{
+                background-color: #000000;
+                border-style: solid;
+                border-color: #f50c0c;
+                border-width: 8%;
+                margin-left: 40.3%;
+                margin-right: 25%;
+            }
+            
+            ol{
+            font-size: 35px;
+            list-style-type: disc;
+            align-items:center;
+            }           
+
+            .parrafo{
+                color: silver
+            }
+
+            footer a{
+                color: silver;
+            }
+
+            #primero{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                color: #fdfdfd;
+                background-color: #000000;
+                border-style: solid;
+                border-color: #f50c0c;
+                border-width: 8%;
+                margin: 14px;
+                margin-left: 25%;
+                margin-right: 25%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                padding-left: 12%;
+                padding-right: 12%;
+                border-radius: 15px;
+                }
+
+            .otrapag{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                color: #fdfdfd;
+                background-color: #888888;
+                border-style: solid;
+                border-color: #000000;
+                border-width: 8%;
+                margin: 14px;
+                margin-left: 44%;
+                margin-right: 28%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                padding-left: 3.5%;
+                padding-right: 3.5%;
+                border-radius: 15px;
+            }
+
+            #masinfo{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                color: #fdfdfd;
+                background-color: #888888;
+                border-style: solid;
+                border-color:#b92222;
+                border-width: 8%;
+                margin: 14px;
+                margin-left: 28%;
+                margin-right: 28%;
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+                padding-left: 3.5%;
+                padding-right: 3.5%;
+                border-radius: 15px;
+            }
+                .gen{
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #000000;
+                }
+
+                label{
+                    font-family: 'Times New Roman', Times, serif;
+                    color: #ffffff;
+                }
+
+                input, textarea{
+                color: #fdfdfd;
+                background-color: #888888;
+                border-style: solid;
+                border-color:#b92222;
+                border-width: 8%;
+                margin: 14px;
+                margin-left: 28%;
+                margin-right: 28%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                padding-left: 3.5%;
+                padding-right: 3.5%;
+                border-radius: 15px;
+                }
+                #video{
+
+                    border-style: solid;
+                border-color:#b92222;
+                border-width: 8%;
+                margin: 14px;
+                margin-left: 28%;
+                margin-right: 28%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                padding-left: 3.5%;
+                padding-right: 3.5%;
+                border-radius: 15px;
+                }
+
+        </style>
+        <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logoseguridad.png" alt="logocompañia" class="logo-img">
+       </div>
+       <nav class="navbar navbar-expand-lg">
+           <div class="container-fluid">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                       <li class="nav-item">
+                           <a href="index.html" class="nav-link " >Inicio</a>
+                         </li>
+                       <li class="nav-item">
+                           <a href="Servicios.html" class="nav-link" >Servicios</a>
+                         </li>
+                         <li class="nav-item">
+                           <a href="nosotros.html" class="nav-link" >Quienes somos</a>
+                         </li>
+                         <li class="nav-item">
+                           <a href="TrabajeConNosotros.html" class="nav-link" >Trabaje con nosotros</a>
+                         </li>
+                         <li class="nav-item">
+                           <a href="Contactenos.html" class="nav-link"  >Contactenos</a>
+                         </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+        </header> 
+    <section>
+        <br/>
+           <h1 id="principal"><center><strong>MAS INFORMACIÓN</strong></center></h1>
+        <img src="img/mega.jfif" alt="megafono" id="mega">  
+        <br/>
+        <br/>
+           <marquee id="corto">INGRESE LA INFORMACIÓN CORRESPONNDIENTE PARA PODER RECIBIR INFORMACIÓN DETALLADA SOBRE NUESTRO SERVICIO</marquee>
+        
+           <form id="masinfo">
+            <div class="conta" style="padding-bottom: 10%;">
+                             <div>
+                                <label>NOMBRES</label>
+                                 <input type="text" class="formItem" id="nombres" name="nombres" size="30"  placeholder="Digite sus nombres" > <br>
+                                </div>
+
+                                <div>
+                                   <label>APELLIDOS</label>
+                                    <input type="text" class="formItem" id="apellidos" name="apellidos" size="30" placeholder="Digite sus apellidos" > <br>
+                                   </div>
+
+                                <div>
+                                    <label>SEXO</label>
+                                     <select name="sexo" id="sexo" class="formItem">
+                                     <option value="0">seleccionar</option>
+                                     <option value="1">Femenino</option>
+                                     <option value="2">CASADO</option>
+                                     </select>
+                                     <br/>
+                                </div>
+
+                             <div >
+                                <label>EDAD</label>
+                                 <input type="text" class="formItem" id="edad" name="edad" size="2" placeholder="Edad" ><br>
+                             </div>
+
+                             <div>
+                                <label>ESTADO CIVIL</label>
+                                 <select name="tipo" id="tipo" class="formItem">
+                                 <option value="0">seleccionar</option>
+                                 <option value="1">SOLTERO</option>
+                                 <option value="2">CASADO</option>
+                                 <option value="3">DIVORCIADO</option>
+                                 </select>
+                                 <br/>
+                                 <br/>
+                            </div>
+                             <div>
+                                <label>COMENTARIO</label>
+                                 <textarea  class="formItem" name="comentario" id="comentario" cols="30" rows="3" placeholder="Digite la informcion que desear recibir" ></textarea>  <br>
+                             </div>
+                                   
+                             <div>
+                                <label>CELULAR</label>
+                                 <input type="text" class="formItem" id="celular" name="celular" size="10"  placeholder="Digite su número celualar" > <br>
+                             </div>
+
+                             <div>
+                                <label>CORREO ELECTRONICO</label>
+                                 <input type="text"  class="formItem" id="email" name="email" size="23"  placeholder="Escriba su correo electronico" > <br>
+                             </div>
+                             
+                             <div>
+                                <button class="form-control" type="submit" value="enviar"  id="boton1">Enviar</button>
+                                <br/>
+                                <button class="form-control" type="reset" value="eliminar"  id="boton2">Limpiar campos</button>
+                             </div>
+                     </div>
+            </div>
+         </form>
+
+
+
+            <br/>
+                <h3><center>GALERÍA</center></h3>
+
+            <br/>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/8J917HVeE-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <a href="nosotros.html" class="otrapag">Volver</a>
+        </section>   
+        <br/>
+        <footer>
+        <br/>
+        <footer>
+           <h5 style="color: silver;">Nuestras Redes</h5>
+           <a href=https://www.facebook.com/ target="_blank" style="color: silver;">Facebook</a>
+           <br/>
+           <a href=https://www.instagram.com/ target="_blank" style="color: silver;">Instagram</a>
+           <br/>
+           <address style="color: silver; margin-top: 1cm;">
+               Escrito por <a href="mailto:alisson.bermeov@ug.edu.ec" style="color: rgb(235, 77, 77);">Bermeo Alisson</a>.<br> 
+               Visistanos en:<br>
+               Alborada 11va, Guayaquil-Guayas-Ecuador
+           </address>
+           <p class="parrafo" style="color: silver;">Derechos Reservados &copy; 2022</p>
+        </footer>
+    <!--Llama al SCR externo llamado EXTER.JS-->
+    <script type="text/javascript" src="js/exter.js">
+    </script>
+</body>
+</html>
